@@ -1,0 +1,6 @@
+#action.yml
+name: 'pocketflask docker deploy'
+description: 'creates docker container for pockeflask'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
