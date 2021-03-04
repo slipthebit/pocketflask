@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  initial_test_job:
+    runs-on: ubuntu-latest
+    name: An initial test job
+    steps:
+      - name: Checkout
+        uses:actions/checkout@v2
+      - name: Initial test job step
+        uses: ./
+        id: inittest
